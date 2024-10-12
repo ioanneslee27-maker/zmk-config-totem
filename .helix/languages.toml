@@ -1,0 +1,4 @@
+[[language]]
+name = "devicetree"
+file-types = ["keymap", "dts", "dtsi", "overlay"]
+auto-format = true
