@@ -1,0 +1,8 @@
+#define MORP_SHIFT(NAME, BASE, SHIFTED) \
+  ZMK_MOD_MORPH(NAME, \
+    mods = <(MOD_LSFT|MOD_RSFT)>; \
+    bindings = <BASE>, <SHIFTED>; \
+  )
+MORP_SHIFT(M_COMMA, &kp COMMA, &kp QMARK)
+MORP_SHIFT(M_DOT,   &kp DOT,   &kp EXCL)
+MORP_SHIFT(M_FSLH,  &kp FSLH,  &kp BSLH)

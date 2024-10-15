@@ -1,0 +1,33 @@
+#define HT        tapping-term-ms = <280>; quick-tap-ms = <180>;
+#define HT_BLCD   flavor = "balanced";
+#define HT_HOLD   flavor = "hold-preferred";
+#define HT_IDLE   require-prior-idle-ms = <120>;
+#define HT_LEFT   hold-trigger-key-positions = <KEYS_RIGHT KEYS_ETC>;
+#define HT_RIGHT  hold-trigger-key-positions = <KEYS_LEFT KEYS_ETC>;
+#define HT_MT     bindings = <&kp>, <&kp>; hold-trigger-on-release; hold-while-undecided;
+#define HT_LT     bindings = <&mo>, <&kp>;
+
+ZMK_HOLD_TAP(lmt, HT HT_LEFT  HT_MT HT_BLCD HT_IDLE)
+ZMK_HOLD_TAP(llt, HT HT_LEFT  HT_LT HT_BLCD HT_IDLE)
+ZMK_HOLD_TAP(rmt, HT HT_RIGHT HT_MT HT_BLCD HT_IDLE)
+ZMK_HOLD_TAP(rlt, HT HT_RIGHT HT_LT HT_BLCD HT_IDLE)
+ZMK_HOLD_TAP(tmt, HT          HT_MT HT_HOLD        )
+ZMK_HOLD_TAP(tlt, HT          HT_LT HT_BLCD        )
+
+#define LX1(keycode) &lmt LSHFT keycode
+#define LX2(keycode) &lmt LCTRL keycode
+#define LX3(keycode) &lmt LALT keycode
+#define LX4(keycode) &lmt LGUI keycode
+#define LX12(keycode) &lmt LS(LCTRL) keycode
+#define LX23(keycode) &lmt LC(LALT) keycode
+#define LX34(keycode) &lmt LA(LGUI) keycode
+#define LX13(keycode) &lmt LS(LALT) keycode
+
+#define RX1(keycode) &rmt LSHFT keycode
+#define RX2(keycode) &rmt LCTRL keycode
+#define RX3(keycode) &rmt LALT keycode
+#define RX4(keycode) &rmt LGUI keycode
+#define RX12(keycode) &lmt LS(LCTRL) keycode
+#define RX23(keycode) &lmt LC(LALT) keycode
+#define RX34(keycode) &lmt LA(LGUI) keycode
+#define RX13(keycode) &lmt LS(LALT) keycode
