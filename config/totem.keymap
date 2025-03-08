@@ -70,7 +70,6 @@ ZMK_MACRO_TWO_PARAM(tog_mt,
     	, <&macro_param_1to1>
     	, <&macro_tap &tog MACRO_PLACEHOLDER>
     	;
-	};
 )
 
 /*=====================*/
