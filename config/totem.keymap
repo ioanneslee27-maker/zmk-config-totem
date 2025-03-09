@@ -141,9 +141,9 @@ ZMK_LAYER(mous_layer, /*
 ╭────────────┬────────────┬────────────┬────────────┬────────────╮╭────────────┬────────────┬────────────┬────────────┬────────────╮
 */&kp LG(TAB)  &kp LS(TAB)  &kp LALT     &kp TAB      __________    &kp C_MUTE   WIN_L        TAB_L        TAB_R        WIN_R     /*
 ├────────────┼────────────┼────────────┼────────────┼────────────┤├────────────┼────────────┼────────────┼────────────┼────────────┤
-*/__________   &mkp MB3     &mkp MB2     &mkp MB1     __________   &kp C_VOL_UP  MMV_L        MMV_D        MMV_U        MMV_R     /*
+*/&mkp MB4     &mkp MB3     &mkp MB2     &mkp MB1     &mkp MB5     &kp C_VOL_UP  MMV_L        MMV_D        MMV_U        MMV_R     /*
 ├────────────┼────────────┼────────────┼────────────┼────────────┤├────────────┼────────────┼────────────┼────────────┼────────────┤
-*/__________   __________   &mkp MB4     &mkp MB5     __________   &kp C_VOL_DN  MSC_L        MSC_D        MSC_U        MSC_R     /*
+*/__________   __________   __________   __________   __________   &kp C_VOL_DN  MSC_L        MSC_D        MSC_U        MSC_R     /*
 ╰────────────┴────────────┴────────────┴────────────┴────────────╯╰────────────┴────────────┴────────────┴────────────┴────────────╯
 ╭────────────╮            ╭────────────┬────────────┬────────────╮╭────────────┬────────────┬────────────╮            ╭────────────╮
 */__________   __________   __________   __________   MOUS_LC       MOUS_LC_LS   __________   __________   __________   __________/*
@@ -162,7 +162,7 @@ ZMK_LAYER(navi_layer, /*
 */__________   __________   __________   __________   __________    __________   __________   __________   __________   __________/*
 ╰────────────╯            ╰────────────┴────────────┴────────────╯╰────────────┴────────────┴────────────╯            ╰────────────╯
 */)
- 
+
 ZMK_LAYER(symb_layer, /*
 ╭────────────┬────────────┬────────────┬────────────┬────────────╮╭────────────┬────────────┬────────────┬────────────┬────────────╮
 */&kp GRAVE    &kp DLLR     &kp CARET    &kp PRCNT    __________    __________   &kp N7       &kp N8       &kp N9       &kp N0    /*
@@ -222,13 +222,13 @@ ZMK_COMBO(lh_under  , &kp UNDER      , LB2 LB3, BASE MOUS NAVI SYMB, COMBO_TERM_
 // Right horizontal
 ZMK_COMBO(rh_lbkt   , &kp LBKT       , RT1 RT2, BASE MOUS NAVI SYMB, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(rh_rbkt   , &kp RBKT       , RT2 RT3, BASE MOUS NAVI SYMB, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-ZMK_COMBO(rh_lbrc   , &kp LBRC       , RM0 RM1, BASE MOUS NAVI SYMB, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-ZMK_COMBO(rh_lpar   , RX12(LPAR)     , RM1 RM2, BASE MOUS NAVI SYMB, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-ZMK_COMBO(rh_rpar   , RX23(RPAR)     , RM2 RM3, BASE MOUS NAVI SYMB, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-ZMK_COMBO(rh_lpar   , RX12(LPAR)     , RM1 RM2, BASE MOUS NAVI SYMB, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-ZMK_COMBO(rh_rpar   , RX23(RPAR)     , RM2 RM3, BASE MOUS NAVI SYMB, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-ZMK_COMBO(rh_rbrc   , RX34(RBRC)     , RM3 RM4, BASE MOUS NAVI SYMB, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-ZMK_COMBO(rh_lang   , RX13(LC(SPACE)), RM1 RM3, BASE MOUS NAVI SYMB, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(rh_lbrc   , &kp LBRC       , RM0 RM1, BASE      NAVI SYMB, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(rh_lpar   , RX12(LPAR)     , RM1 RM2, BASE      NAVI SYMB, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(rh_rpar   , RX23(RPAR)     , RM2 RM3, BASE      NAVI SYMB, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(rh_lpar   , RX12(LPAR)     , RM1 RM2, BASE      NAVI SYMB, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(rh_rpar   , RX23(RPAR)     , RM2 RM3, BASE      NAVI SYMB, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(rh_rbrc   , RX34(RBRC)     , RM3 RM4, BASE      NAVI SYMB, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(rh_lang   , RX13(LC(SPACE)), RM1 RM3, BASE      NAVI SYMB, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(rh_lt     , &kp LT         , RB1 RB2, BASE MOUS NAVI SYMB, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(rh_gt     , &kp GT         , RB2 RB3, BASE MOUS NAVI SYMB, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 // Left vertical
