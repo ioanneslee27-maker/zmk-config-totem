@@ -90,8 +90,8 @@ ZMK_SFT_MORPH(M_RPAR,  &kp RPAR,  &kp RBRC)
 
 #define KP_LA0 &kp TAB
 #define KP_LH2 &kp ESC
-#define KP_LH1 &tlt NAVI SPACE
-#define KP_LH0 &tlt NUMB RET
+#define KP_LH1 &tlt HOT1 SPACE
+#define KP_LH0 &tlt HOT2 RET
 
 #define KP_RH0 &tlt SYMB BSPC
 #define KP_RH1 &sk LSHFT
