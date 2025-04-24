@@ -80,7 +80,7 @@ ZMK_SFT_MORPH(M_RPAR,  &kp RPAR,  &kp RBRC)
 #define TAB_L &kp LC(LS(TAB))
 #define TAB_R &kp LC(TAB)
 
-#define KP_LA0 &kp &studio_unlock
+#define KP_LA0 &kp TAB
 #define KP_LH2 &kp ESC
 #define KP_LH1 &tlt HOT1 SPACE
 #define KP_LH0 &tlt HOT2 RET
@@ -291,3 +291,4 @@ ZMK_COMBO(lv_fslh   , &kp FSLH        , LM3 LB3, BASE MOUS NAVI NUMB SYMB, COMBO
 
 // Both horizontal
 ZMK_COMBO(bh_boot   , &bootloader     , LH2 RH2, BASE MOUS NAVI NUMB SYMB, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
+ZMK_COMBO(bh_studio , &studio_unlock  , LA0 RA1, BASE MOUS NAVI NUMB SYMB, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
